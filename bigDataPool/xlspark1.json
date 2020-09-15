@@ -1,0 +1,16 @@
+{
+	"name": "xlspark1",
+	"location": "southcentralus",
+	"properties": {
+		"autoPause": {
+			"enabled": true,
+			"delayInMinutes": 15
+		},
+		"creationDate": "2020-09-15T04:38:50.4833333Z",
+		"nodeCount": 3,
+		"nodeSize": "Medium",
+		"nodeSizeFamily": "MemoryOptimized",
+		"provisioningState": "Succeeded",
+		"sparkVersion": "2.4"
+	}
+}

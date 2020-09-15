@@ -1,0 +1,16 @@
+{
+	"name": "xlpool2",
+	"location": "southcentralus",
+	"properties": {
+		"autoPause": {
+			"enabled": true,
+			"delayInMinutes": 15
+		},
+		"creationDate": "2020-09-14T23:42:42.6733333Z",
+		"nodeCount": 3,
+		"nodeSize": "Medium",
+		"nodeSizeFamily": "MemoryOptimized",
+		"provisioningState": "Succeeded",
+		"sparkVersion": "2.4"
+	}
+}
