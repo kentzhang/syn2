@@ -1,0 +1,18 @@
+{
+	"name": "xlsparkpool3",
+	"properties": {
+		"autoPause": {
+			"enabled": true,
+			"delayInMinutes": 15
+		},
+		"autoScale": {
+			"enabled": true,
+			"maxNodeCount": 4,
+			"minNodeCount": 3
+		},
+		"nodeCount": 10,
+		"nodeSize": "Medium",
+		"nodeSizeFamily": "MemoryOptimized",
+		"sparkVersion": "2.4"
+	}
+}
