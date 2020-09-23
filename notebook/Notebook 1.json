@@ -31,22 +31,14 @@
 				"nodeCount": 10,
 				"cores": 4,
 				"memory": 28
-			}
+			},
+			"sessionKeepAliveTimeout": 30
 		},
 		"cells": [
 			{
 				"cell_type": "code",
 				"source": [
-					"1+1+1"
-				],
-				"outputs": [
-					{
-						"execution_count": 5,
-						"output_type": "execute_result",
-						"data": {
-							"text/plain": "3"
-						}
-					}
+					"1+1+1+1"
 				],
 				"execution_count": 5
 			}
