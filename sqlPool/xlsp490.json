@@ -1,0 +1,12 @@
+{
+	"name": "xlsp490",
+	"location": "southcentralus",
+	"sku": {
+		"name": "DW100c",
+		"capacity": 0
+	},
+	"properties": {
+		"collation": "SQL_Latin1_General_CP1_CI_AS",
+		"createMode": "Default"
+	}
+}
