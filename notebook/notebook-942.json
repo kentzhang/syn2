@@ -1,0 +1,10 @@
+{
+	"name": "notebook-942",
+	"properties": {
+		"bigDataPool": {
+			"referenceName": "xpool",
+			"type": "BigDataPoolReference"
+		},
+		"cells": []
+	}
+}
