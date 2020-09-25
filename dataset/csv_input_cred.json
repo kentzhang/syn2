@@ -5,12 +5,6 @@
 			"referenceName": "gen2SpnCred",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"aaa": {
-				"type": "string",
-				"defaultValue": "aaa"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
