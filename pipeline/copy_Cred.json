@@ -50,6 +50,12 @@
 				]
 			}
 		],
+		"parameters": {
+			"aa": {
+				"type": "string",
+				"defaultValue": "a"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2020-09-04T05:27:29Z"
 	},
