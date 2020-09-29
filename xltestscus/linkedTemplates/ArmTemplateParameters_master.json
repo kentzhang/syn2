@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "xltestscus"
+		},
+		"xltestscus-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"gen2SpnCred_properties_typeProperties_url": {
+			"value": "https://xlgen2.dfs.core.windows.net"
+		},
+		"xl_adf_akv_properties_typeProperties_baseUrl": {
+			"value": "https://xl-adf-akv.vault.azure.net/"
+		},
+		"xltestscus-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://xltestdlg2.dfs.core.windows.net"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
