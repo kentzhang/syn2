@@ -114,13 +114,11 @@
     }
   },
   "Microsoft.Synapse/workspaces/sqlscripts": {
-    "*": {
-      "properties": {
-        "content": {
-          "currentConnection": {
-            "name": "=",
-            "type": "="
-          }
+    "properties": {
+      "content": {
+        "currentConnection": {
+          "name": "=",
+          "type": "="
         }
       }
     }
