@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "-- type your sql script here, we now have intellisense\n-- type your sql script here, we now have intellisense\n-- type your sql script here, we now have intellisense",
+			"query": "-- type your sql script here, we now have intellisenseasd asd \n-- type your sql script here, we now have intellisenseasd asd \n-- type your sql script here, we now have intellisense asd asd ",
 			"metadata": {
 				"language": "sql"
 			},
