@@ -1,0 +1,128 @@
+{
+  "Microsoft.Synapse/workspaces": {
+    "properties": {
+      "globalParameters": {
+        "*": {
+          "value": "="
+        }
+      }
+    },
+    "location": "="
+  },
+  "Microsoft.Synapse/workspaces/pipelines": {
+  },
+  "Microsoft.Synapse/workspaces/integrationRuntimes": {
+    "properties": {
+      "typeProperties": {
+        "linkedInfo": {
+          "key": {
+            "value": "-::secureString"
+          },
+          "resourceId": "="
+        },
+        "computeProperties": {
+          "dataFlowProperties": {
+            "externalComputeInfo": [
+              {
+                "accessToken": "-::secureString"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "Microsoft.Synapse/workspaces/triggers": {
+    "properties": {
+      "pipelines": [
+        {
+          "parameters": {
+            "*": "="
+          }
+        },
+        "pipelineReference.referenceName"
+      ],
+      "pipeline": {
+        "parameters": {
+          "*": "="
+        }
+      },
+      "typeProperties": {
+        "scope": "="
+      }
+
+    }
+  },
+  "Microsoft.Synapse/workspaces/linkedServices": {
+    "*": {
+      "properties": {
+        "typeProperties": {
+          "accountName": "=",
+          "username": "=",
+          "userName": "=",
+          "accessKeyId": "=",
+          "servicePrincipalId": "=",
+          "userId": "=",
+          "host": "=",
+          "clientId": "=",
+          "clusterUserName": "=",
+          "clusterSshUserName": "=",
+          "hostSubscriptionId": "=",
+          "clusterResourceGroup": "=",
+          "subscriptionId": "=",
+          "resourceGroupName": "=",
+          "tenant": "=",
+          "dataLakeStoreUri": "=",
+          "baseUrl": "=",
+          "database": "=",
+          "serviceEndpoint": "=",
+          "batchUri": "=",
+          "poolName": "=",
+          "databaseName": "=",
+          "systemNumber": "=",
+          "server": "=",
+          "url": "=",
+          "functionAppUrl": "=",
+          "environmentUrl": "=",
+          "aadResourceId": "=",
+          "sasUri": "|:-sasUri:secureString",
+          "sasToken": "|",
+          "connectionString": "|:-connectionString:secureString",
+          "hostKeyFingerprint": "="
+        }
+      }
+    },
+    "Odbc": {
+      "properties": {
+        "typeProperties": {
+          "userName": "=",
+          "connectionString": {
+            "secretName": "="
+          }
+        }
+      }
+    }
+  },
+  "Microsoft.Synapse/workspaces/datasets": {
+    "*": {
+      "properties": {
+        "typeProperties": {
+          "folderPath": "=",
+          "fileName": "="
+        }
+      }
+    }
+  },
+  "Microsoft.Synapse/workspaces/sqlscripts": {
+    "*": {
+      "properties": {
+        "content": {
+          "currentConnection": {
+            "name": "=",
+            "type": "="
+          }
+        }
+      }
+    }
+  }
+}
