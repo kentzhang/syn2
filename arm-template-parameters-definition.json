@@ -122,5 +122,28 @@
         }
       }
     }
+  },
+  "Microsoft.Synapse/workspaces/notebooks": {
+    "properties": {
+      "bigDataPool": {
+        "referenceName": "="
+      },
+      "sessionProperties": {
+        "*": "="
+      }
+    }
+  },
+  "Microsoft.Synapse/workspaces/sparkJobDefinitions": {
+    "properties": {
+      "targetBigDataPool": {
+        "referenceName": "="
+      },
+      "sessionProperties": {
+        "*": "="
+      },
+      "jobProperties": {
+        "*": "="
+      }
+    }
   }
 }
