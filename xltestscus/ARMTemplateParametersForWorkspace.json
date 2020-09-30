@@ -13,6 +13,12 @@
 		},
 		"xltestscus-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://xltestdlg2.dfs.core.windows.net"
+		},
+		"SQL script 1_properties_content_currentConnection_name": {
+			"value": "master"
+		},
+		"SQL script 1_properties_content_currentConnection_type": {
+			"value": "SqlOnDemand"
 		}
 	}
 }
