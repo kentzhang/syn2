@@ -100,6 +100,26 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('workspaceName'), '/IntegrationRuntime1')]",
+			"type": "Microsoft.Synapse/workspaces/integrationRuntimes",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"type": "Managed",
+				"typeProperties": {
+					"computeProperties": {
+						"location": "AutoResolve",
+						"dataFlowProperties": {
+							"computeType": "General",
+							"coreCount": 8,
+							"timeToLive": 0,
+							"externalComputeInfo": []
+						}
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('workspaceName'), '/spnCred')]",
 			"type": "Microsoft.Synapse/workspaces/credentials",
 			"apiVersion": "2019-06-01-preview",
@@ -314,33 +334,20 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 4,
-						"memory": 28,
-						"extraHeader": {}
-					},
-					"sessionKeepAliveTimeout": 30
+						"memory": 28
+					}
 				},
 				"cells": [
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"1+1+1+1"
 						],
-						"outputs": [
-							{
-								"execution_count": 4,
-								"output_type": "execute_result",
-								"data": {
-									"text/plain": "4"
-								},
-								"metadata": {}
-							}
-						],
+						"outputs": [],
 						"execution_count": 1
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"## Cell title 1+1 test from XL\n",
 							""
@@ -365,7 +372,6 @@
 					"name": "Spark job definition 1",
 					"file": "abfss://filesystem@account.dfs.core.windows.net/mySpark.py",
 					"className": "org.apache.spark.examples.SparkPi",
-					"conf": {},
 					"args": [
 						"--iteration",
 						"10000",
@@ -388,26 +394,6 @@
 			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/IntegrationRuntime1')]",
-			"type": "Microsoft.Synapse/workspaces/integrationRuntimes",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"type": "Managed",
-				"typeProperties": {
-					"computeProperties": {
-						"location": "AutoResolve",
-						"dataFlowProperties": {
-							"computeType": "General",
-							"coreCount": 8,
-							"timeToLive": 0,
-							"externalComputeInfo": []
-						}
-					}
-				}
-			},
 			"dependsOn": []
 		}
 	]
