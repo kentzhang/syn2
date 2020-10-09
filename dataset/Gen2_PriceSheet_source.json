@@ -1,12 +1,12 @@
 {
-	"name": "Json1",
+	"name": "Gen2_PriceSheet_source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Gen2_SPN_Cred_Auth",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "copypricesheet2"
+			"name": "SPN_Cred_Auth"
 		},
 		"annotations": [],
 		"type": "Json",
@@ -14,7 +14,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "part-10.json",
-				"folderPath": "sink",
+				"folderPath": "folder1",
 				"fileSystem": "fs1"
 			}
 		},

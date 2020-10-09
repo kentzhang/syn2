@@ -1,0 +1,36 @@
+{
+	"name": "gtmPricesheetTempDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pricingtemp",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"directory": {
+				"type": "string"
+			},
+			"container": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "tests"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().container",
+					"type": "Expression"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

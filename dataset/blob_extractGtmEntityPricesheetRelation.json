@@ -1,0 +1,49 @@
+{
+	"name": "blob_extractGtmEntityPricesheetRelation",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container": {
+				"type": "string",
+				"defaultValue": "@dataset().container"
+			},
+			"directory": {
+				"type": "string",
+				"defaultValue": "@item().directory"
+			},
+			"filename": {
+				"type": "string",
+				"defaultValue": "@item().filename"
+			}
+		},
+		"folder": {
+			"name": "gtmEntityPricesheetRelation"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().container",
+					"type": "Expression"
+				}
+			},
+			"compression": {
+				"type": "gzip"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

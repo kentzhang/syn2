@@ -1,8 +1,8 @@
 {
-	"name": "Json1",
+	"name": "Json2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Gen2_SPN_Cred_Auth",
+			"referenceName": "gen2_test2",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {

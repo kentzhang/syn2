@@ -1,0 +1,22 @@
+{
+	"name": "AzureSqlMI1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlMI",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault9",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "asd"
+			},
+			"credential": {
+				"referenceName": "credential1",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}

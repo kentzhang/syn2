@@ -1,19 +1,18 @@
 {
-	"name": "Json1",
+	"name": "Gen2_SPN_Auth_Sink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Gen2_SPN_Cred_Auth",
+			"referenceName": "Gen2_SPN_Auth",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
-			"name": "copypricesheet2"
+			"name": "Other_Auth"
 		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "part-10.json",
 				"folderPath": "sink",
 				"fileSystem": "fs1"
 			}
