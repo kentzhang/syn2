@@ -1,5 +1,6 @@
 {
 	"name": "xpool",
+	"location": "southcentralus",
 	"properties": {
 		"autoPause": {
 			"enabled": true,
@@ -13,6 +14,12 @@
 		"nodeCount": 10,
 		"nodeSize": "Small",
 		"nodeSizeFamily": "MemoryOptimized",
-		"sparkVersion": "2.4"
+		"sparkVersion": "2.4",
+		"libraryRequirements": {
+			"time": "2020-10-07T18:30:04.8026803Z",
+			"filename": "New Text Document.txt",
+			"content": ""
+		},
+		"isComputeIsolationEnabled": false
 	}
 }

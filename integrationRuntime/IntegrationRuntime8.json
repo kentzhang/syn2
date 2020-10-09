@@ -1,7 +1,8 @@
 {
-	"name": "IntegrationRuntime1",
+	"name": "IntegrationRuntime8",
 	"properties": {
 		"type": "Managed",
+		"description": "asd ",
 		"typeProperties": {
 			"computeProperties": {
 				"location": "AutoResolve",

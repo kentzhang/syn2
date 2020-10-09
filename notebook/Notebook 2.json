@@ -1,5 +1,5 @@
 {
-	"name": "Notebook 1",
+	"name": "Notebook 2",
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
@@ -38,18 +38,10 @@
 			{
 				"cell_type": "code",
 				"source": [
-					"1+1+1+1"
+					"2+2"
 				],
 				"attachments": null,
-				"execution_count": 1
-			},
-			{
-				"cell_type": "markdown",
-				"source": [
-					"## Cell title 1+1 test from XL\n",
-					""
-				],
-				"attachments": null
+				"execution_count": null
 			}
 		]
 	}
