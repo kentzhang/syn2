@@ -1,0 +1,60 @@
+{
+	"name": "Json3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "spn_cred_blob_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "part-10.json",
+				"container": "input"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CommerceRootId": {
+					"type": "string"
+				},
+				"BillingGroupId": {
+					"type": "string"
+				},
+				"RatingAssetId": {
+					"type": "string"
+				},
+				"RatingMonth": {
+					"type": "string"
+				},
+				"RatingPeriodStartDate": {
+					"type": "string"
+				},
+				"RatingPeriodEndDate": {
+					"type": "string"
+				},
+				"PriceSheetId": {
+					"type": "string"
+				},
+				"PriceSheetVersion": {
+					"type": "string"
+				},
+				"EffectiveDate": {
+					"type": "string"
+				},
+				"Rnum": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"PartitionKey": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,30 @@
+{
+	"name": "triggerWeek",
+	"properties": {
+		"description": "des",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Week",
+				"interval": 2,
+				"startTime": "2020-05-08T01:48:00Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"minutes": [
+						3
+					],
+					"hours": [
+						2
+					],
+					"weekDays": [
+						"Monday",
+						"Thursday"
+					]
+				}
+			}
+		}
+	}
+}

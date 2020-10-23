@@ -1,0 +1,23 @@
+{
+	"name": "Gen2_AccessKey_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Gen2_AccessKey_Auth",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Other_Auth"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "source",
+				"fileSystem": "accesskey"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
