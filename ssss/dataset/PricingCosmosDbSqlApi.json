@@ -1,0 +1,19 @@
+{
+	"name": "PricingCosmosDbSqlApi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDb1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "tests"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "pricingtest2"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,23 @@
+{
+	"name": "Gen2_AccessKey_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Gen2_AccessKey_Auth",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Other_Auth"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sink",
+				"fileSystem": "accesskey"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,15 @@
+{
+	"name": "gen2SpnCredTestLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://xlgen2.dfs.core.windows.net",
+			"credential": {
+				"referenceName": "gen2SpnCred",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}

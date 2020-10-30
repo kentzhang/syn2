@@ -1,0 +1,11 @@
+{
+	"name": "AzureDataLakeStorage6",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://xlgen2.dfs.core.windows.net"
+		}
+	}
+}

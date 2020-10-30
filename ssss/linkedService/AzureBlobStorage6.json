@@ -1,0 +1,13 @@
+{
+	"name": "AzureBlobStorage6",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "ss",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://aipagentsdiag.blob.core.windows.net",
+			"accountKind": "Storage"
+		}
+	}
+}

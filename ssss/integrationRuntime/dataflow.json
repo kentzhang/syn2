@@ -1,0 +1,16 @@
+{
+	"name": "dataflow",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "AutoResolve",
+				"dataFlowProperties": {
+					"computeType": "General",
+					"coreCount": 272,
+					"timeToLive": 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "blob_cred_test",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://xlblob.blob.core.windows.net",
+			"accountKind": "BlobStorage",
+			"credential": {
+				"referenceName": "credential2",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}

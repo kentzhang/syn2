@@ -1,0 +1,11 @@
+{
+	"name": "AzureDataLakeStorage4",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://budgetsperfeastus01.dfs.core.windows.net"
+		}
+	}
+}

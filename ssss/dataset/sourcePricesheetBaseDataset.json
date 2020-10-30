@@ -1,0 +1,96 @@
+{
+	"name": "sourcePricesheetBaseDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container": {
+				"type": "string",
+				"defaultValue": "gtmpricesheetbasec11"
+			},
+			"directory": {
+				"type": "string",
+				"defaultValue": "runId=2019092512/pricesheetbase"
+			},
+			"filename": {
+				"type": "string",
+				"defaultValue": "part-00000-4eec305f-24a3-4f47-9dad-3e0348848fc2-c000.json.gz"
+			}
+		},
+		"folder": {
+			"name": "tests"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().container",
+					"type": "Expression"
+				}
+			},
+			"compression": {
+				"type": "gzip"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CommerceRootId": {
+					"type": "string"
+				},
+				"BillingGroupId": {
+					"type": "string"
+				},
+				"RatingAssetId": {
+					"type": "string"
+				},
+				"RatingMonth": {
+					"type": "string"
+				},
+				"RatingPeriodId": {
+					"type": "string"
+				},
+				"RatingMonthStartDate": {
+					"type": "string"
+				},
+				"RatingPeriodStartDate": {
+					"type": "string"
+				},
+				"RatingPeriodEndDate": {
+					"type": "string"
+				},
+				"PriceSheetId": {
+					"type": "string"
+				},
+				"PriceSheetVersion": {
+					"type": "string"
+				},
+				"PriceSheetGroupId": {
+					"type": "string"
+				},
+				"EffectiveDate": {
+					"type": "string"
+				},
+				"RunId": {
+					"type": "string"
+				},
+				"Rnum": {
+					"type": "integer"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

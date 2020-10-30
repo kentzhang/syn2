@@ -1,0 +1,64 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Gen2_SPN_Cred_Auth",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "copypricesheet2"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-10.json",
+				"folderPath": "sink",
+				"fileSystem": "fs1"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CommerceRootId": {
+					"type": "string"
+				},
+				"BillingGroupId": {
+					"type": "string"
+				},
+				"RatingAssetId": {
+					"type": "string"
+				},
+				"RatingMonth": {
+					"type": "string"
+				},
+				"RatingPeriodStartDate": {
+					"type": "string"
+				},
+				"RatingPeriodEndDate": {
+					"type": "string"
+				},
+				"PriceSheetId": {
+					"type": "string"
+				},
+				"PriceSheetVersion": {
+					"type": "string"
+				},
+				"EffectiveDate": {
+					"type": "string"
+				},
+				"Rnum": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"PartitionKey": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
