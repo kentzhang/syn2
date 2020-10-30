@@ -1,6 +1,9 @@
 {
 	"name": "bpool123",
 	"location": "southcentralus",
+	"tags": {
+		"sss": "sss"
+	},
 	"properties": {
 		"autoPause": {
 			"enabled": true,
