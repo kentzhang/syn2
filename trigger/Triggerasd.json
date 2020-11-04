@@ -1,0 +1,17 @@
+{
+	"name": "Triggerasd",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2020-11-04T17:55:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
