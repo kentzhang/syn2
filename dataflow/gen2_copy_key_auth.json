@@ -12,6 +12,10 @@
 					"name": "gen2SourceKeyAuth"
 				},
 				{
+					"dataset": {
+						"referenceName": "Avro1",
+						"type": "DatasetReference"
+					},
 					"name": "source1"
 				}
 			],
