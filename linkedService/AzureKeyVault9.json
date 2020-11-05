@@ -1,0 +1,11 @@
+{
+	"name": "AzureKeyVault9",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://ccmpWestUSvaultDEV.vault.azure.net/"
+		}
+	}
+}

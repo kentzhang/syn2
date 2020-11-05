@@ -1,0 +1,28 @@
+{
+	"name": "gen2_copy_spn_auth",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Gen2_SPN_Auth_Source",
+						"type": "DatasetReference"
+					},
+					"name": "gen2SpnAuthSource"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "Gen2_SPN_Auth_Sink",
+						"type": "DatasetReference"
+					},
+					"name": "gen2SpnAuthSink"
+				}
+			],
+			"transformations": [],
+			"script": "source(output(\n\t\tCommerceRootId as string,\n\t\tBillingGroupId as string,\n\t\tRatingAssetId as string,\n\t\tRatingMonth as string,\n\t\tRatingPeriodStartDate as string,\n\t\tRatingPeriodEndDate as string,\n\t\tPriceSheetId as string,\n\t\tPriceSheetVersion as string,\n\t\tEffectiveDate as string,\n\t\tRnum as string,\n\t\tid as string,\n\t\tPartitionKey as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> gen2SpnAuthSource\ngen2SpnAuthSource sink(input(\n\t\tCommerceRootId as string,\n\t\tBillingGroupId as string,\n\t\tRatingAssetId as string,\n\t\tRatingMonth as string,\n\t\tRatingPeriodStartDate as string,\n\t\tRatingPeriodEndDate as string,\n\t\tPriceSheetId as string,\n\t\tPriceSheetVersion as string,\n\t\tEffectiveDate as string,\n\t\tRnum as string,\n\t\tid as string,\n\t\tPartitionKey as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> gen2SpnAuthSink"
+		}
+	}
+}

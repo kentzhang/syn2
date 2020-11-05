@@ -1,0 +1,63 @@
+{
+	"name": "Gen2_SPN_Auth_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Gen2_SPN_Auth",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Other_Auth"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sink",
+				"fileSystem": "fs1"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CommerceRootId": {
+					"type": "string"
+				},
+				"BillingGroupId": {
+					"type": "string"
+				},
+				"RatingAssetId": {
+					"type": "string"
+				},
+				"RatingMonth": {
+					"type": "string"
+				},
+				"RatingPeriodStartDate": {
+					"type": "string"
+				},
+				"RatingPeriodEndDate": {
+					"type": "string"
+				},
+				"PriceSheetId": {
+					"type": "string"
+				},
+				"PriceSheetVersion": {
+					"type": "string"
+				},
+				"EffectiveDate": {
+					"type": "string"
+				},
+				"Rnum": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"PartitionKey": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

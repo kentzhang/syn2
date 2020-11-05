@@ -1,0 +1,37 @@
+{
+	"name": "triggerMonth_WeekDays",
+	"properties": {
+		"description": "ssddddd",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Month",
+				"interval": 3,
+				"startTime": "2020-05-08T05:34:00Z",
+				"endTime": "2020-05-13T00:54:59.752Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"minutes": [
+						2
+					],
+					"hours": [
+						2
+					],
+					"monthlyOccurrences": [
+						{
+							"day": "Sunday",
+							"occurrence": 1
+						},
+						{
+							"day": "Monday",
+							"occurrence": 2
+						}
+					]
+				}
+			}
+		}
+	}
+}
